@@ -59,3 +59,5 @@ cd ../client
 npm start
 ```
 
+After running the commands, the project will be running on `http://localhost:5173`.
+
