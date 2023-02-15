@@ -6,8 +6,6 @@ This is a simple project that allows the user to create restaurants, edit them, 
 
 The user can also search for restaurants by name, cuisine, borough, street, and restaurant id.
 
-The data used in this project can be found [here](https://github.com/ShAd0W20/mongo-form/tree/main/server/restaurants.json).
-
 ### Screenshots
 
 ![Main Page](https://imgur.com/tL1NWtt.png)
@@ -32,6 +30,21 @@ cd server
 npm install
 cd ../client
 npm install
+```
+
+After installing the dependencies, you must create a `.env` file in the `server` folder and add the following lines:
+
+```bash
+MONGO_URI=<your_mongo_uri>
+BASE_PORT=3000
+```
+
+The data used in this project can be found [here](https://github.com/ShAd0W20/mongo-form/tree/main/server/restaurants.json).
+
+You can import the data into your MongoDB database using the following command:
+
+```bash
+mongoimport --db <your_database_name> --collection restaurants --file <path_to_file>/restaurants.json
 ```
 
 ## Usage
