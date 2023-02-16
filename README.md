@@ -54,9 +54,9 @@ To run the project, run the following commands in the terminal:
 ```bash
 cd mongo-form
 cd server
-npm start
+npm run dev
 cd ../client
-npm start
+npm run dev
 ```
 
 After running the commands, the project will be running on `http://localhost:5173`.
